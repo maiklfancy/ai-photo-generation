@@ -13,7 +13,7 @@ A high-performance local AI pipeline optimized for photorealistic image generati
 ### 💻 System Requirements
 
 * **OS:** Windows 10 / 11 (64-bit)
-* **GPU:** NVIDIA RTX series (8GB+ VRAM recommended for high-resolution synthesis)
+* **GPU:** NVIDIA GTX series (8GB+ VRAM recommended for high-resolution synthesis)
 * **RAM:** 16 GB system memory
 
 ---
