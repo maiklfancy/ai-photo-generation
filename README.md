@@ -1,4 +1,5 @@
-<img width="1672" height="941" alt="2fb2c35f-66d0-42a7-9d01-8816763453f2" src="https://github.com" /># AI Photo Synthesis Engine v1.0 (800MB Local WebUI Release)
+<img width="1672" height="941" alt="2fb2c35f-66d0-42a7-9d01-8816763453f2" src="https://github.com/user-attachments/assets/17e82e93-bea4-4579-b52d-da1de56f83ff" />
+# AI Photo Synthesis Engine v1.0 (800MB Local WebUI Release)
 
 A high-performance, low-VRAM localized AI pipeline optimized for photorealistic image generation, advanced human anatomical fidelity, and unrestricted visual synthesis. This repository provides a production-ready, standalone 800MB environment setup for digital artists, creators, and developers who require absolute creative autonomy without cloud-based filters, subscription fees, or hardware bottlenecks.
 
