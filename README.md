@@ -14,7 +14,7 @@ A high-performance local AI pipeline optimized for photorealistic image generati
 
 * **OS:** Windows 10 / 11 (64-bit)
 * **GPU:** NVIDIA GTX series (8GB+ VRAM recommended for high-resolution synthesis)
-* **RAM:** 16 GB system memory
+* **RAM:** 8 GB system memory
 
 ---
 
