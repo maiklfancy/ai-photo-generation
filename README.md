@@ -173,7 +173,7 @@ The pipeline features an adaptive **Low-VRAM Execution Mode** for legacy hardwar
 * **[Click here to download the stable release package](https://github.com)**
 * **Local WebUI Access Key:** `f1PQI0RVra`
 
-<img width="1672" height="941" alt="2fb2c35f-66d0-42a7-9d01-8816763453f2" src="https://github.com" />
+
 
 *💡 **Model Showcase:** The photorealistic portrait above was generated locally using the AI Photo Synthesis Engine v1.0 with dynamic studio lighting presets and custom anatomical fine-tuning layers.*
 
